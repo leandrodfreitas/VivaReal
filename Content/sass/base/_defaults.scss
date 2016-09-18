@@ -1,0 +1,70 @@
+body {
+   background-color: $bg-color;
+   font-family: 'Roboto', sans-serif;   
+}
+
+*, 
+*:after, 
+*:before {
+   @include box-sizing(border-box);
+}
+
+.container {   
+   margin: 0 auto 0 102px;
+   padding-left: 15px;
+   padding-right: 15px;   
+   
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+   
+}
+
+.content {   
+   margin-top: 77px;
+	
+	&:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+	
+}
+
+%row {
+	max-width: 100%;
+}
+
+a {
+   @include transition(all, 0.3s);
+   text-decoration: none;
+   
+   &:hover {
+      @include transition(all, 0.6s);
+      text-decoration: none;
+   }
+   
+}
+
+@media(max-width: $medium-breakpoint) {
+   
+   .container {
+      margin-left: 75px
+   }
+   
+   .content {
+      margin-top: 63px;
+   }
+   
+} 
+
+@media(max-width: $small-breakpoint) {
+   
+   .container {
+      margin-left: 55px
+   }
+   
+}
+

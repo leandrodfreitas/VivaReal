@@ -1,0 +1,34 @@
+.header {
+   background-color: $primary-color;
+   height: 60px;   
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+}
+
+.main-title {
+   color: $white-color;
+   font-size: 23px;
+   font-weight: 500;
+   margin-top: 15px;
+   text-transform: uppercase;
+}
+
+@media(max-width: $medium-breakpoint) {
+   
+   .main-title {
+      font-size: 16px; 
+      margin-top: 17px;
+   }
+   
+}
+
+@media(max-width: $medium-breakpoint) {
+   
+   .header {
+      height: 48px;
+   }
+   
+}
+

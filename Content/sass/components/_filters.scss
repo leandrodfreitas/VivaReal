@@ -1,0 +1,31 @@
+.filters {
+   background-color: #f9f9f9;
+   float: left;
+   margin-bottom: 20px;
+   padding: 12px;   
+   @extend %col-3;
+   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.filters__title {
+   color: $gray-light-2;
+   font-size: 16px;
+   margin-bottom: 12px;
+}
+
+@media(max-width: $intermediate-breakpoint) {
+   
+   .filters {         
+      @include mq-col(4);
+   }
+   
+}
+
+@media(max-width: $medium-breakpoint) {
+   
+   .filters {            
+      @include mq-col(12);
+   }
+   
+}

@@ -1,0 +1,19 @@
+@mixin box-sizing($val) {
+   -webkit-box-sizing: $val;
+      -moz-box-sizing: $val;
+           box-sizing: $val;
+}
+
+@mixin border-radius($radius) {
+   -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+       -ms-border-radius: $radius;
+           border-radius: $radius;
+}
+
+@mixin transition($value1, $value2) {
+   -webkit-transition: $value1 $value2;
+      -moz-transition: $value1 $value2;
+        -o-transition: $value1 $value2;
+           transition: $value1 $value2;
+}

@@ -1,0 +1,21 @@
+.btn {
+   background-color: $main-color;
+   border: 0;
+   color: $white-color;   
+   font-weight: 500;
+   text-transform: uppercase;
+   @include border-radius(4px);      
+   
+   &:hover, 
+   &:focus {
+      background-color: $primary-color;
+      text-decoration: none;
+   }
+}
+
+.btn-default {      
+   font-size: 14px;   
+   padding: 7px 14px;  
+   text-align: center;
+   @extend .btn;
+}
