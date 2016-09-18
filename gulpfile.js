@@ -39,7 +39,7 @@ gulp.task('copy-angular', function () {
 
 // Copia js
 gulp.task('copy-js', function () {
-	return gulp.src(['Content/js/vivaRealApp.js'])
+	return gulp.src(['Content/js/app.js'])
 		.pipe(gulp.dest('dist/Content/js'));
 });
 
