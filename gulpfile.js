@@ -2,8 +2,7 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var htmlmin = require('gulp-htmlmin');
 var copy = require('gulp-copy');
-var uglify = require('gulp-uglify');
-var files = ['index.html', 'Content/css/style.css'];
+var files = ['index.html', 'Content/css/style.css', 'Content/js/app.js'];
 
 // LiveReload
 gulp.task('files', function() {
