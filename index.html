@@ -107,10 +107,10 @@
             </div>
             <div class="cards-container" ng-controller="imoveisController">
                <article class="cards-item" ng-repeat="item in lista | limitTo: 20 | filter:{id:buscarId, squareMeters:buscarArea, beds:buscarQuartos, baths:buscarBanheiros, price:buscarValorMin}">
-                  <div class="cards-img-container">
+                  <figure class="cards-img-container">
                      <img src="Content/imgs/apartamento1.jpg" class="cards-img-container__img img-responsive" alt="Apartamento1">
-                     <span class="cards-img-container__price">R$ {{item.price}}</span>
-                  </div>                  
+                     <figcaption class="cards-img-container__price">R$ {{item.price}}</figcaption>
+                  </figure>                  
                   <div class="cards-description">
                      <span class="cards-description__id">ID. {{item.id}}</span>
                      <h2 class="cards-description__title">{{item.title}}</h2>
