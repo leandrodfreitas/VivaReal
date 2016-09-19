@@ -36,6 +36,12 @@ gulp.task('copy-angular', function () {
 		.pipe(gulp.dest('dist/Content/dependencies/angular'));
 });
 
+// Copia angular-locale.js
+gulp.task('copy-angular-locale', function () {
+	return gulp.src(['Content/dependencies/angular-locale-pt-br/angular-locale_pt-br.js'])
+		.pipe(gulp.dest('dist/Content/dependencies/angular-locale-pt-br'));
+});
+
 // Copia js
 gulp.task('copy-js', function () {
 	return gulp.src(['Content/js/app.js'])
@@ -60,6 +66,7 @@ gulp.task('default', [
 	'minify-html',
 	'copy-css',
 	'copy-angular',
+   'copy-angular-locale',
 	'copy-js',
 	'copy-imgs',
 	'copy-favicon'

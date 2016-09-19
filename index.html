@@ -5,8 +5,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">   
    <title>VivaReal</title>
+   <!-- css -->
    <link rel="stylesheet" href="Content/css/style.css">
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+   <!-- js -->   
+   <script src="Content/dependencies/angular/angular.min.js"></script>   
+   <script src="Content/dependencies/angular-locale-pt-br/angular-locale_pt-br.js"></script>
+   <script src="Content/js/app.js"></script>   
    <!-- favicon -->
    <link rel="apple-touch-icon" sizes="57x57" href="Content/imgs/favicon/apple-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="Content/imgs/favicon/apple-icon-60x60.png">
@@ -109,7 +114,7 @@
                <article class="cards-item" ng-repeat="item in lista | limitTo: 20 | filter:{id:buscarId, squareMeters:buscarArea, beds:buscarQuartos, baths:buscarBanheiros, price:buscarValorMin}">
                   <figure class="cards-img-container">
                      <img src="Content/imgs/apartamento1.jpg" class="cards-img-container__img img-responsive" alt="Apartamento1">
-                     <figcaption class="cards-img-container__price">R$ {{item.price}}</figcaption>
+                     <figcaption class="cards-img-container__price">{{item.price | currency:'R$ '}}</figcaption>
                   </figure>                  
                   <div class="cards-description">
                      <span class="cards-description__id">ID. {{item.id}}</span>
@@ -137,9 +142,6 @@
       </div>
    
    </div>
-   
-   <script src="Content/dependencies/angular/angular.min.js"></script>
-   <script src="Content/js/app.js"></script>
    
 </body>
  
