@@ -111,6 +111,7 @@
                </form>
             </div>
             <div class="cards-container" ng-controller="imoveisController">
+            	<img src="Content/imgs/ajax-loader.gif" class="cards-spinner" ng-show="loading" />
                <article class="cards-item" ng-repeat="item in lista | limitTo: 20 | filter:{id:buscarId, squareMeters:buscarArea, beds:buscarQuartos, baths:buscarBanheiros, price:buscarValorMin}">
                   <figure class="cards-img-container">
                      <img src="Content/imgs/apartamento1.jpg" class="cards-img-container__img img-responsive" alt="Apartamento1">
