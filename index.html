@@ -39,17 +39,13 @@
 </head>
 
 <body>
-   
    <header class="header">
       <div class="container">
          <h1 class="main-title">spotippos - anúncios</h1>
       </div>
-   </header> 
-   
-   <div class="wrap">
-   
+   </header>    
+   <div class="wrap">   
       <div class="container">
-
          <aside class="aside">
             <a href="/" class="logo" title="VivaReal">
                <img src="Content/imgs/logo-vivareal.svg" class="logo-img" alt="Logo VivaReal">
@@ -70,8 +66,7 @@
                   </li>
                </ul>
             </nav>
-         </aside>
-         
+         </aside>         
          <div class="content">
             <div class="filters">
                <h2 class="filters__title">Filtro</h2>
@@ -79,39 +74,39 @@
                   <fieldset>
                      <div class="form-group">
                         <div class="form-inline">
-                           <label for="" class="label-control">id</label>  
-                           <input type="text" class="form-control" maxlength="4" ng-model="buscarId">
+                           <label for="id" class="label-control">id</label>  
+                           <input type="text" id="id" class="form-control" maxlength="4" ng-model="buscarId">
                         </div>
                         <div class="form-inline">
-                           <label for="" class="label-control">área</label>  
-                           <input type="text" class="form-control" maxlength="5" ng-model="buscarArea" >
-                        </div>
-                     </div>                  
-                     <div class="form-group">
-                        <div class="form-inline">
-                           <label for="" class="label-control">quartos</label>  
-                           <input type="text" class="form-control" maxlength="2" ng-model="buscarQuartos">
-                        </div>
-                        <div class="form-inline">
-                           <label for="" class="label-control">banheiros</label>  
-                           <input type="text" class="form-control" maxlength="2" ng-model="buscarBanheiros">
+                           <label for="area" class="label-control">área</label>  
+                           <input type="text" id="area" class="form-control" maxlength="5" ng-model="buscarArea" >
                         </div>
                      </div>                  
                      <div class="form-group">
                         <div class="form-inline">
-                           <label for="" class="label-control">R$</label>  
-                           <input type="text" class="form-control" placeholder="Mínimo" ng-model="buscarValorMin">
+                           <label for="quartos" class="label-control">quartos</label>  
+                           <input type="text" id="quartos" class="form-control" maxlength="2" ng-model="buscarQuartos">
                         </div>
                         <div class="form-inline">
-                           <label for="" class="label-control">R$</label>  
-                           <input type="text" class="form-control" placeholder="Máximo" ng-model="buscarValorMax">
+                           <label for="banheiros" class="label-control">banheiros</label>  
+                           <input type="text" id="banheiros" class="form-control" maxlength="2" ng-model="buscarBanheiros">
+                        </div>
+                     </div>                  
+                     <div class="form-group">
+                        <div class="form-inline">
+                           <label for="valor-minimo" class="label-control">R$</label>  
+                           <input type="text" id="valor-minimo" class="form-control" placeholder="Mínimo" ng-model="buscarValorMin">
+                        </div>
+                        <div class="form-inline">
+                           <label for="valor-maximo" class="label-control">R$</label>  
+                           <input type="text" id="valor-maximo" class="form-control" placeholder="Máximo" ng-model="buscarValorMax">
                         </div>
                      </div>                  
                   </fieldset>
                </form>
             </div>
             <div class="cards-container" ng-controller="imoveisController">
-            	<img src="Content/imgs/ajax-loader.gif" class="cards-spinner" ng-show="loading" />
+            	<img src="Content/imgs/ajax-loader.gif" class="cards-spinner" alt="Carregando" ng-show="loading" />
                <article class="cards-item" ng-repeat="item in lista | limitTo: 20 | filter:{id:buscarId, squareMeters:buscarArea, beds:buscarQuartos, baths:buscarBanheiros, price:buscarValorMin}">
                   <figure class="cards-img-container">
                      <img src="Content/imgs/apartamento1.jpg" class="cards-img-container__img img-responsive" alt="Apartamento1">
@@ -138,12 +133,9 @@
                   </div>                  
                </article>               
             </div>
-         </div>
-      
-      </div>
-   
-   </div>
-   
+         </div>      
+      </div>   
+   </div>   
 </body>
  
 </html>
