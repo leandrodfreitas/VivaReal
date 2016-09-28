@@ -4,6 +4,7 @@
   <li>HTML5</li>
   <li>SASS</li>
   <li>ITCSS</li>
+  <li>BEM</li>
   <li>Flexbox</li>
   <li>AngularJS</li>
   <li>Bower</li>
