@@ -6,12 +6,13 @@
    @extend %col-3;
    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-}
-
-.filters__title {
-   color: $gray-light-2;
-   font-size: 16px;
-   margin-bottom: 12px;
+	
+	&__title {
+   	color: $gray-light-2;
+   	font-size: 16px;
+   	margin-bottom: 12px;
+	}
+	
 }
 
 @media(max-width: $intermediate-breakpoint) {

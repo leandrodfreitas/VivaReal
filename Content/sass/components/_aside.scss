@@ -11,12 +11,13 @@
 .logo {  
    background-color: $main-color;
    display: block;
-   height: 60px;   
-}
-
-.logo-img {
-   padding-top: 10px;
-   @extend .center-block;   
+   height: 60px;
+	
+	&-img {
+   	padding-top: 10px;
+   	@extend .center-block;   
+	}
+	
 }
 
 .navbar {   
@@ -24,38 +25,38 @@
 }
 
 .navbar-nav {
-   
-}
 
-.navbar-nav__item {    
-   margin: 0 8px 20px 8px;   
+	&__item {    
+		margin: 0 8px 20px 8px;   
    
-   &:last-child {
-      margin-bottom: 0;
-   }
+		&:last-child {
+			margin-bottom: 0;
+		}
    
-}
-      
-.navbar-nav__link {
-   color: $white-color;
-   display: block;
-   font-size: 11px;
-   font-weight: 400;
-   padding: 10px;
-   text-align: center;   
-   text-transform: uppercase;
-   @include border-radius(4px);
+	}
+	
+	&__link {
+		color: $white-color;
+		display: block;
+		font-size: 11px;
+		font-weight: 400;
+		padding: 10px;
+		text-align: center;   
+		text-transform: uppercase;
+		@include border-radius(4px);
    
-   &:hover, 
-   &.active {
-      background-color: $main-color;   
-   }
+		&:hover, 
+		&.active {
+			background-color: $main-color;   
+		}
    
-}
-
-.navbar-nav__img {
-   display: block;
-   margin: 0 auto 10px auto; 
+	}
+	
+	&__img {
+   	display: block;
+   	margin: 0 auto 10px auto; 	
+	}
+		
 }
 
 @media(max-width: $medium-breakpoint) {
@@ -101,8 +102,3 @@
    }
    
 }
-
-
-
-
-
